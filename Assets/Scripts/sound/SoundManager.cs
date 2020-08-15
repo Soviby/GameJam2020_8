@@ -45,8 +45,8 @@ public static class SoundManager
 
         //加载Bank
         //RuntimeManager.LoadBank("BankA");
-        //RuntimeManager.LoadBank("Master");
-        //RuntimeManager.LoadBank("Master.strings");
+        RuntimeManager.LoadBank("Master");
+        RuntimeManager.LoadBank("Master.strings");
         _baseBankLoadOk = true;
     }
 
@@ -135,7 +135,7 @@ public static class SoundManager
         if (!voicer)
         {
             var eventNameGo = eventName.Replace('/','_');
-            studioEvent = _root.FindChild<StudioEventEmitter>(eventNameGo);
+            studioEvent = _root.FindChild<StudioEventEmitter>(eventNameGo,false);
             if (!studioEvent)
             {
                 var go = new GameObject(eventNameGo);

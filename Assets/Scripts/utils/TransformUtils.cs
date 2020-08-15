@@ -31,11 +31,12 @@ static class TransformUtils
     /// <param name="go"></param>
     /// <param name="id"></param>
     /// <returns></returns>
-    public static obj FindChild<obj>(this GameObject go, string id) where obj: Component
+    public static obj FindChild<obj>(this GameObject go, string id, bool isErro = true) where obj: Component
     {
-        if (go == null)
+        if ( go == null)
         {
-            Debug.LogError("FindChild,go is null");
+            if(isErro)
+                Debug.LogError("FindChild,go is null");
             return null;
         }
         var t = FindChild(go.transform, id);
@@ -53,7 +54,7 @@ static class TransformUtils
     /// <param name="t"></param>
     /// <param name="id"></param>
     /// <returns></returns>
-    static Transform FindChild(Transform t, string id)
+    static Transform FindChild(Transform t, string id, bool isErro = true)
     {
         if (id == ".") return t;//查找自己
         //用/分割路径
@@ -66,7 +67,8 @@ static class TransformUtils
                 //t = FindChildDirectByRecursive(t, a);
                 if (t == null)
                 {
-                    Debug.LogError("FindChild failed ,id:" + id);
+                    if(isErro )
+                        Debug.LogError("FindChild failed ,id:" + id);
                     break;
                 }
             }
@@ -77,7 +79,8 @@ static class TransformUtils
         //t = FindChildDirectByRecursive(t, id);
         if (t == null)
         {
-            Debug.LogError("FindChild failed ,id:" + id);
+            if (isErro)
+                Debug.LogError("FindChild failed ,id:" + id);
         }
         return t;
     }

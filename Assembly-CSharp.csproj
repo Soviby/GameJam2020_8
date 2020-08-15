@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelTrack.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelPlayableAsset.cs" />
+    <Compile Include="Assets\Scripts\game\trigger\linelight\LineLight.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyDrag.cs" />
     <Compile Include="Assets\Scripts\game\role\role\RoleModel.cs" />
     <Compile Include="Assets\Scripts\common\FSMTriggerID.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\game\talks\panel\TVTipsPanel.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelPlayableBehaviour.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\SceneBehavior.cs" />
+    <Compile Include="Assets\Scripts\game\trigger\linelight\ReflectionBehavior.cs" />
     <Compile Include="Assets\Scripts\game\Input\InputModel.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyImage.cs" />
     <Compile Include="Assets\Scripts\game\Camera\CameraModel.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\MyPlayableBehaviour.cs" />
     <Compile Include="Assets\Scripts\utils\MonoSingleton.cs" />
+    <Compile Include="Assets\Scripts\game\animaiton\AnimationBehavior.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyVerticalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\game\test\TestModel.cs" />
@@ -100,6 +103,7 @@
     <Compile Include="Assets\Scripts\data\Entity.cs" />
     <Compile Include="Assets\Scripts\game\LogicLoader\LogicLoaderControl.cs" />
     <Compile Include="Assets\Scripts\Timeline\TimelineAction.cs" />
+    <Compile Include="Assets\Scripts\game\CommonPanel\EndingTipsPanel.cs" />
     <Compile Include="Assets\Scripts\utils\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\data\DB.cs" />
     <Compile Include="Assets\Scripts\common\PatrolData.cs" />
@@ -138,12 +142,14 @@
     <Compile Include="Assets\Scripts\Timeline\frame\ActorTrack.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\TestScene\TestScene.cs" />
     <Compile Include="Assets\Scripts\game\test\OneWayPlatform.cs" />
+    <Compile Include="Assets\Scripts\game\attack\PlayerAttackBehaviour.cs" />
     <Compile Include="Assets\Scripts\game\LogicMM.cs" />
     <Compile Include="Assets\Scripts\Timeline\TimelineData.cs" />
     <Compile Include="Assets\Scripts\game\talks\panel\PangbaiTipsPanel.cs" />
     <Compile Include="Assets\Scripts\data\datas\ObjData.cs" />
     <Compile Include="Assets\Scripts\Timeline\TimeLineController.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\ActionMixer.cs" />
+    <Compile Include="Assets\Scripts\game\CommonPanel\StartPanel.cs" />
     <Compile Include="Assets\Scripts\game\Log\panel\LogPanel.cs" />
     <Compile Include="Assets\Scripts\data\json\JSONParser.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvUtils.cs" />
@@ -153,8 +159,11 @@
     <Compile Include="Assets\Scripts\Timeline\TimelineManager.cs" />
     <Compile Include="Assets\Scripts\game\role\mainrole\MoveBehaviour.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvHelper.cs" />
-    <Compile Include="Assets\Scripts\game\attack\PlayerAttackBehaviour.cs" />
-    <Compile Include="Assets\Scripts\game\trigger\linelight\LineLight.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneBehavior.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneModel.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneModel.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneBehavior.cs" />
+    <Compile Include="Assets\Scripts\game\CommonPanel\HPMPPanel.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\FadeShader.shader" />
@@ -717,17 +726,38 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>F:\develop\2020.1.0f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -737,6 +767,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
@@ -753,6 +786,12 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -761,36 +800,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

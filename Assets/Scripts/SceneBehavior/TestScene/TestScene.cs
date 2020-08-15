@@ -8,7 +8,7 @@ public class TestScene : SceneBehavior<TestSceneModel>
     public override void OnAppInit()
     {
         base.OnAppInit();
-        LogicMM.sceneControl.RegisterBehavior(2,this);
+       // LogicMM.sceneControl.RegisterBehavior(2,this);
     }
 
     public override void LeaveBehavior()

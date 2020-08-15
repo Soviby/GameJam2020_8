@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - wall
-  - 
-  - 
+  - player
+  - trigger
   - 
   - 
   - 
@@ -47,7 +47,7 @@ TagManager:
   - name: wall
     uniqueID: 146815677
     locked: 0
-  - name: item
+  - name: trigger
     uniqueID: 1228569821
     locked: 0
   - name: monster

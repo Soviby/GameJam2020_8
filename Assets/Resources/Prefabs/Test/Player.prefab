@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4679554884843715143}
   - component: {fileID: 2590302697267111273}
   - component: {fileID: 4240106066978507778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4679554884843715142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.54, y: 1.64, z: 0}
-  m_LocalScale: {x: 0.00980506, y: 0.010358571, z: 0.04816736}
+  m_LocalScale: {x: 0.04816736, y: 0.048167355, z: 0.04816736}
   m_Children:
   - {fileID: 4679554885429616813}
   - {fileID: 6019186159831837281}
@@ -186,7 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4679554885429616813}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Check Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2815363505064850375}
   - component: {fileID: 2906711977089151821}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9811321, g: 0.7020746, b: 0.48593804, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: bd3ac00877aa3a00dd7c3a49757eabbe57641966
@@ -265,8 +265,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.1799924
+  m_PointLightInnerRadius: 1.8
+  m_PointLightOuterRadius: 3.46
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -290,6 +290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 792781890527250193, guid: 24e2a59c7ae56cf4ab5ff3b724acd9d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 792781890527250194, guid: 24e2a59c7ae56cf4ab5ff3b724acd9d1,
         type: 3}

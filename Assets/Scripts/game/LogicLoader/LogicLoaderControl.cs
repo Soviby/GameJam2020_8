@@ -19,13 +19,15 @@ public class LogicLoaderControl :SmartControl<LogicLoaderModel>
 
         //加载资源
         yield return GameMng.instance.StartCoroutine(DB.LodingData());
+
+        SoundManager.Init();
         //mcv模块初始化
         LogicMM.FireOnAppInit();
         //链接服务器
 
 
         //进主城
-        LogicMM.sceneControl.EnterScene(0);
+        LogicMM.sceneControl.EnterScene(2);
         yield return null;
     }
 }

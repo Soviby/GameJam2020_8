@@ -48,12 +48,17 @@ public class SceneControl :SmartControl<SceneModel>
         {
             //退出当前玩法
             _cur_behavior?.LeaveBehavior();
+
             _last_behavior = _cur_behavior;
-            _cur_behavior = newBehavior;
+            _cur_behavior = newBehavior; 
         }
         if (sceneID != _cur_scene_id)
         {
             _cur_behavior?.LeaveScene();
+            //销毁场景
+            if(_cur_scene_id!=-1)
+                DestroyScene(DB.SceneBaseMap[_cur_scene_id]);
+
             _last_scene_id = _cur_scene_id;
             _cur_scene_id = sceneID;
 
@@ -76,6 +81,13 @@ public class SceneControl :SmartControl<SceneModel>
         //var behaviour = LogicMM.mainRole.AddMainRole();
         //behaviour.transform.position = sceneBase.player_pos;
     }
+
+    void DestroyScene(SceneBase sceneBase) {
+        var go = GameObject.Find("map--" + sceneBase.name);
+        if (go)
+            GameObject.Destroy(go);
+    }
+
     IEnumerator BuildScene(SceneBase sceneBase)
     {
         //从res中获取预制体

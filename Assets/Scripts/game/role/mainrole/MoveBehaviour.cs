@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(AnimationBehavior))]
 public class MoveBehaviour : MonoBehaviour
 {
     [Header("H/V Move")]
@@ -29,11 +30,13 @@ public class MoveBehaviour : MonoBehaviour
     //[SerializeField] private GameObject jumpEffect;
 
     [SerializeField] private bool canJump;
+    private AnimationBehavior  animationBehavior;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
+        animationBehavior = GetComponent<AnimationBehavior>();
         Physics2D.queriesStartInColliders = false;//确保游戏一开始，射线从某个含有Collider组件的内部发出，会忽略这个Collider组件对象的检测
 
         isGround = false;
@@ -84,6 +87,7 @@ public class MoveBehaviour : MonoBehaviour
 
         if (isGround && !canJump)
             jumpTimes = 2;
+        
     }
 
     private void FixedUpdate()

@@ -20,4 +20,7 @@ public class ObjBehavior :MonoBehaviour
     {
         LogicMM.role.RemoveAOIObj(this);
     }
+
+
+
 }

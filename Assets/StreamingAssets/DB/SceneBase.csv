@@ -1,3 +1,6 @@
 id,资源名,场景名,玩家坐标,是否为测试地图
 id,res,name,player_pos,is_tset
 0,Map_2,Test,,FALSE
+1,pass_1,pass_1,,FALSE
+2,map_login,map_login,,FALSE
+3,pass_2,pass_2,,FALSE
