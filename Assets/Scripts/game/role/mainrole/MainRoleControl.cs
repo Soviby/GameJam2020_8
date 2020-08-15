@@ -3,8 +3,8 @@ using System.Collections;
 
 public class MainRoleControl : SmartControl<MainRoleModel>
 {
-    private float moveH, moveV;
-    private float moveSpeed=1;
+    //private float moveH, moveV;
+    //private float moveSpeed=1;
     //public override void OnAppInit()
     //{
     //    base.OnAppInit();

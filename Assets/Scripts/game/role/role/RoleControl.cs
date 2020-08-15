@@ -40,4 +40,27 @@ public class RoleControl : SmartControl<RoleModel>
     //    }
     //    timeline.StartPlay();
     //}
+
+    public int aoi_id = -1;
+    public Dictionary<ObjTypeDefs,List<ObjBehavior>  > objs = new Dictionary<ObjTypeDefs, List<ObjBehavior>>();
+    public int AddAOIObj(ObjBehavior objBehavior) {
+        aoi_id++;
+        objBehavior.aoi_id = aoi_id;
+        if (!objs.ContainsKey(objBehavior.objType))
+        {
+            objs.Add(objBehavior.objType,new List<ObjBehavior>());
+        }
+        objs[objBehavior.objType].Add(objBehavior);
+
+        if (objBehavior.objType == ObjTypeDefs.main_role)
+            LogicMM.mainRole.model.mainRole= objBehavior;
+        return aoi_id;
+    }
+
+    public void RemoveAOIObj(ObjBehavior objBehavior) {
+        if (objs.ContainsKey(objBehavior.objType)&&  objs[objBehavior.objType].Contains(objBehavior))
+        {
+            objs[objBehavior.objType].Remove(objBehavior);
+        }
+    }
 }

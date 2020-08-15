@@ -147,6 +147,12 @@
     <Compile Include="Assets\Scripts\sound\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Timeline\TimelineManager.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvHelper.cs" />
+    <Compile Include="Assets\Scripts\obj\ObjBehavior.cs" />
+    <Compile Include="Assets\Scripts\game\test\Echo.cs" />
+    <Compile Include="Assets\Scripts\game\test\Destroyer.cs" />
+    <Compile Include="Assets\Scripts\game\test\OneWayPlatform.cs" />
+    <Compile Include="Assets\Scripts\game\role\mainrole\MoveBehaviour.cs" />
+    <Compile Include="Assets\Scripts\game\Camera\CameraBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\FadeShader.shader" />

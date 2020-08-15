@@ -89,4 +89,13 @@ namespace Entity
     {
         public static string AOI_PETH = "Prefabs/";
     }
+
+    public enum ObjTypeDefs
+    {
+        main_role = 0,//主角
+        monster = 1,
+        trigger = 2,//机关
+        npc = 3
+    }
+
 }
