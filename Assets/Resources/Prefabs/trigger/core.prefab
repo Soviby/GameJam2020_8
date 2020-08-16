@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2968746744437429375}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,9 +40,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5366024292987745163}
   - component: {fileID: 5452722191333729748}
-  - component: {fileID: 6061893339551376573}
   - component: {fileID: 5783842580033575411}
-  m_Layer: 10
+  - component: {fileID: 1208716108490906438}
+  m_Layer: 11
   m_Name: core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,21 +115,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6061893339551376573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4462157952140273973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0c81d593a4f881499a695358f467b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objType: 2
-  aoi_id: 0
-  lineLights: []
 --- !u!114 &5783842580033575411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,12 +129,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pre_light2D: {fileID: 7736015143857337798, guid: 8d36cd1a3729abf439d0566a3e7eea71,
     type: 3}
-  angle: 0.76
+  angle: 0
   layer:
     serializedVersion: 2
-    m_Bits: 1792
+    m_Bits: 3840
   target: {fileID: 0}
   father: {fileID: 0}
   isSource: 1
   distance: 50
   tf_pos: {fileID: 2968746744437429375}
+--- !u!58 &1208716108490906438
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462157952140273973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.3

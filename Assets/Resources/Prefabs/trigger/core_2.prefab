@@ -172,3 +172,4 @@ MonoBehaviour:
   lineLights: []
   tip: E
   dis: 5
+  angle: -30
