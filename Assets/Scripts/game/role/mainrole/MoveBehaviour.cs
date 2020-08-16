@@ -32,11 +32,14 @@ public class MoveBehaviour : MonoBehaviour
     [SerializeField] private bool canJump;
     private AnimationBehavior  animationBehavior;
 
+    private PlayerAttackBehaviour playerAttackBehaviour;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
         animationBehavior = GetComponent<AnimationBehavior>();
+        playerAttackBehaviour = GetComponentInChildren<PlayerAttackBehaviour>();
         Physics2D.queriesStartInColliders = false;//确保游戏一开始，射线从某个含有Collider组件的内部发出，会忽略这个Collider组件对象的检测
 
         isGround = false;
@@ -80,6 +83,11 @@ public class MoveBehaviour : MonoBehaviour
             jumpTimes--;
             canJump = true;
         }
+        else if (Input.GetButtonDown("Attack"))
+        {
+            playerAttackBehaviour.OneAttack();
+        }
+
 
         moveH = Input.GetAxis("Horizontal") * moveSpeed;
         Flip();
@@ -87,7 +95,7 @@ public class MoveBehaviour : MonoBehaviour
 
         if (isGround && !canJump)
             jumpTimes = 2;
-        
+
     }
 
     private void FixedUpdate()

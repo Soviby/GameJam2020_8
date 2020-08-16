@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Entity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
     public float startTime;
     public float time;
     public bool isAttacking = false;
+    public ObjTypeDefs objTypeDefs =  ObjTypeDefs.monster;
 
 
     private Animator anim;
@@ -43,26 +45,21 @@ public class PlayerAttackBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Attack();
+        ///Attack();
     }
     Coroutine coroutine;
     void Attack()
     {
         if(Input.GetButtonDown("Attack"))
         {
-            //anim.SetTrigger("Attack");
-            //if (LogicMM.mainRole.model.mainRole)
-            //{
-            //    var anim =LogicMM.mainRole.model.mainRole.GetComponent<AnimationBehavior>();
-            //    if (anim)
-            //    {
-            //        anim.PlayAnimation(anim.animationParams.Attack);
-            //    }
-            //}
-            if (isAttacking)
-                return;
-            StartCoroutine(StartAttack());
+            OneAttack();
         }
+    }
+
+    public void OneAttack() {
+        if (isAttacking)
+            return;
+        StartCoroutine(StartAttack());
     }
 
     IEnumerator StartAttack()
@@ -87,7 +84,11 @@ public class PlayerAttackBehaviour : MonoBehaviour
             var obj = other.gameObject.GetComponent<ObjBehavior>();
             if (obj.objType == Entity.ObjTypeDefs.monster)
             {
-
+                obj.Hp -= damage;
+            }
+            else if (obj.objType == Entity.ObjTypeDefs.main_role)
+            {
+                obj.Hp -= damage;
             }
         }
         //if(other.gameObject.CompareTag("Enemy"))

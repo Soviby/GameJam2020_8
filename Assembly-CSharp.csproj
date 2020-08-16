@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\SceneBehavior\MainCity\MainCityModel.cs" />
     <Compile Include="Assets\Scripts\ui\IPanel.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyText.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass3Scene\Pass3SceneBehavior.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneModel.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\MyPlayableAsset.cs" />
     <Compile Include="Assets\Scripts\data\json\JSONWriter.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\game\trigger\linelight\ReflectionBehavior.cs" />
     <Compile Include="Assets\Scripts\game\Input\InputModel.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyImage.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass3Scene\Pass3SceneModel.cs" />
     <Compile Include="Assets\Scripts\game\Camera\CameraModel.cs" />
     <Compile Include="Assets\Scripts\ui\MyPanelEventListener.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\MainCity\MainCityBehavior.cs" />
@@ -116,6 +118,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Scripts\game\test\panel\TestPanel.cs" />
     <Compile Include="Assets\Scripts\utils\ArrayHelper.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\EndScene\EndSceneModel.cs" />
     <Compile Include="Assets\Scripts\utils\data\BuilderConfig.cs" />
     <Compile Include="Assets\Scripts\obj\ObjBehavior.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneBehavior.cs" />
@@ -125,6 +128,7 @@
     <Compile Include="Assets\Scripts\game\trigger\TriggerControl.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs" />
     <Compile Include="Assets\Scripts\common\AnimationParams.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\EndScene\EndSceneBehavior.cs" />
     <Compile Include="Assets\Scripts\game\talks\TalksModel.cs" />
     <Compile Include="Assets\Scripts\game\CommonPanel\InteractivePanel.cs" />
     <Compile Include="Assets\Scripts\ui\Tips\Tips.cs" />
@@ -169,16 +173,15 @@
     <Compile Include="Assets\Scripts\game\role\mainrole\MoveBehaviour.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvHelper.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneModel.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\Pass3Scene\Pass3SceneBehavior.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\Pass3Scene\Pass3SceneModel.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\EndScene\EndSceneModel.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\EndScene\EndSceneBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\MosterBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\MainRoleBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\FadeShader.shader" />
      <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
      <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.dll" />
+     <None Include="Assets\Shaders\DefaultColorFlash.shader" />
      <None Include="Assets\Demigiant\DOTween\DOTween.dll" />
      <None Include="Assets\Demigiant\DOTweenPro\DOTweenPro.dll" />
      <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />

@@ -12,6 +12,7 @@ public class AnimationParams
 {
     public string Idle = "idle";
     public string Dead = "dead";
+    public string Deaded = "deaded";
     public string Run = "run";
     public string Walk = "walk";
     public string Attack = "attack";

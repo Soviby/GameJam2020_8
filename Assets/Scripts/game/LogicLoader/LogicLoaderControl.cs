@@ -27,7 +27,7 @@ public class LogicLoaderControl :SmartControl<LogicLoaderModel>
 
 
         //进主城
-        LogicMM.sceneControl.EnterScene(2);
+        LogicMM.sceneControl.EnterScene(3);
         yield return null;
     }
 }
