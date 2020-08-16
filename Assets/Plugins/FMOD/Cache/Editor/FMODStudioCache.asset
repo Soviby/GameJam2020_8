@@ -37,7 +37,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
-  lastModified: 637331485350974594
+  lastModified: 637331709185037640
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/fmod/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637331485350984819
+  lastModified: 637331709185037640
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -83,5 +83,5 @@ MonoBehaviour:
   - {fileID: -8086138964424810298}
   StringsBanks:
   - {fileID: -941800017085734724}
-  stringsBankWriteTime: 637331485350984819
+  stringsBankWriteTime: 637331709185037640
   cacheVersion: 4
