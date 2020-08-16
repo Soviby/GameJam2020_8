@@ -4,3 +4,5 @@ id,res,name,player_pos,is_tset
 1,pass_1,pass_1,,FALSE
 2,map_login,map_login,,FALSE
 3,pass_2,pass_2,,FALSE
+4,pass_3,pass_3,,FALSE
+5,map_end,map_end,,FALSE

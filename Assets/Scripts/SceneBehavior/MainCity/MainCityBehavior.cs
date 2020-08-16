@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
-
+/// <summary>
+/// 第一关
+/// </summary>
 public class MainCityBehavior : SceneBehavior<MainCityModel>
 {
     public override void OnAppInit()

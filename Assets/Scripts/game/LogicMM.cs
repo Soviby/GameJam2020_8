@@ -16,6 +16,8 @@ public static class LogicMM
     public static MainCityBehavior mainCity = new MainCityBehavior();//主城
     public static LoginSceneBehavior  loginScene = new LoginSceneBehavior();//开始界面
     public static Pass2SceneBehavior  pass2Scene = new Pass2SceneBehavior();//第二关卡
+    public static Pass3SceneBehavior   pass3Scene = new Pass3SceneBehavior();//第二关卡
+    public static EndSceneBehavior  endScene = new EndSceneBehavior();//结束关卡
     public static TestScene testScene = new TestScene();//测试场景
     public static CameraContol cameraContol = new CameraContol();
     public static TalksControl talks = new TalksControl();

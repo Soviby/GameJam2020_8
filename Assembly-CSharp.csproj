@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelTrack.cs" />
+    <Compile Include="Assets\Scripts\game\trigger\TriggerModel.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelPlayableAsset.cs" />
     <Compile Include="Assets\Scripts\game\trigger\linelight\LineLight.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyDrag.cs" />
@@ -79,6 +80,8 @@
     <Compile Include="Assets\Scripts\game\talks\panel\TVTipsPanel.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelPlayableBehaviour.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\SceneBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\CoreTriggerBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\PassBehavior.cs" />
     <Compile Include="Assets\Scripts\game\trigger\linelight\ReflectionBehavior.cs" />
     <Compile Include="Assets\Scripts\game\Input\InputModel.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyImage.cs" />
@@ -119,6 +122,7 @@
     <Compile Include="Assets\Scripts\utils\GameObjectPool.cs" />
     <Compile Include="Assets\Scripts\ui\component\EmojiText\EmojiData.cs" />
     <Compile Include="Assets\Scripts\utils\data\GameConfig.cs" />
+    <Compile Include="Assets\Scripts\game\trigger\TriggerControl.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs" />
     <Compile Include="Assets\Scripts\common\AnimationParams.cs" />
     <Compile Include="Assets\Scripts\game\talks\TalksModel.cs" />
@@ -148,6 +152,7 @@
     <Compile Include="Assets\Scripts\game\test\OneWayPlatform.cs" />
     <Compile Include="Assets\Scripts\game\attack\PlayerAttackBehaviour.cs" />
     <Compile Include="Assets\Scripts\game\LogicMM.cs" />
+    <Compile Include="Assets\Scripts\obj\TriggerBehavior.cs" />
     <Compile Include="Assets\Scripts\Timeline\TimelineData.cs" />
     <Compile Include="Assets\Scripts\game\talks\panel\PangbaiTipsPanel.cs" />
     <Compile Include="Assets\Scripts\data\datas\ObjData.cs" />
@@ -164,11 +169,10 @@
     <Compile Include="Assets\Scripts\game\role\mainrole\MoveBehaviour.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvHelper.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneModel.cs" />
-    <Compile Include="Assets\Scripts\game\trigger\TriggerModel.cs" />
-    <Compile Include="Assets\Scripts\game\trigger\TriggerControl.cs" />
-    <Compile Include="Assets\Scripts\obj\TriggerBehavior.cs" />
-    <Compile Include="Assets\Scripts\obj\CoreTriggerBehavior.cs" />
-    <Compile Include="Assets\Scripts\obj\PassBehavior.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass3Scene\Pass3SceneBehavior.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass3Scene\Pass3SceneModel.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\EndScene\EndSceneModel.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\EndScene\EndSceneBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\FadeShader.shader" />
