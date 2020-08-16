@@ -16,5 +16,12 @@ public class GameMng : MonoBehaviour
         LogicMM.logicLoaderControl.StartGame();
     }
 
+    private void Update()
+    {
+        foreach (var modlue in ModuleBase.ModuleList)
+        {
+            modlue.OnFrameUpdate();
+        }
+    }
 
 }

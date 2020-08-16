@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5252512507444519316}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,9 +40,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5349645238063576077}
   - component: {fileID: 5467868407033700946}
-  - component: {fileID: 769737519732098070}
   - component: {fileID: 252028133566424856}
-  m_Layer: 10
+  - component: {fileID: 792884179775891255}
+  - component: {fileID: 490236354948513099}
+  m_Layer: 11
   m_Name: core_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,20 +116,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &769737519732098070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4442508209911262899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0c81d593a4f881499a695358f467b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objType: 2
-  aoi_id: 0
 --- !u!114 &252028133566424856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,9 +133,42 @@ MonoBehaviour:
   angle: 0
   layer:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 3840
   target: {fileID: 0}
   father: {fileID: 0}
   isSource: 1
   distance: 50
   tf_pos: {fileID: 5252512507444519316}
+--- !u!58 &792884179775891255
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442508209911262899}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 1.3
+--- !u!114 &490236354948513099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442508209911262899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94022793090b3cb44a7887b8d552bfa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objType: 2
+  aoi_id: 0
+  lineLights: []
+  tip: E
+  dis: 5

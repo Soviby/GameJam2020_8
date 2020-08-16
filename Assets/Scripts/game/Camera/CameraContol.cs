@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using UnityEngine.Rendering.Universal;
 
 public class CameraContol : SmartControl<CameraModel>
 {
@@ -20,13 +21,18 @@ public class CameraContol : SmartControl<CameraModel>
                 var go = new GameObject();
                 go.transform.parent = Root.transform;
                 var uiCamera= go.AddComponent<Camera>();
+                var cameraData = uiCamera.GetUniversalAdditionalCameraData();
+                cameraData.renderType = CameraRenderType.Overlay;
                 go.name = "uiCamera";
                 uiCamera.cullingMask = 1 << GameConfig.LAYER_UI;
-                uiCamera.clearFlags = CameraClearFlags.Depth;
-                uiCamera.depth = 1;
+                //uiCamera.clearFlags = CameraClearFlags.Depth;
+                //uiCamera.depth = 1;
                 uiCamera.orthographic = true;
                 go.transform.position = new Vector3(100000,0,0);
                 this.uiCamera = uiCamera;
+
+                cameraData = mainCamera.GetUniversalAdditionalCameraData();
+                cameraData.cameraStack.Add(uiCamera);
             }
             return uiCamera;
         }

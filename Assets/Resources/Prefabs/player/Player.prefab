@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objType: 0
   aoi_id: 0
+  lineLights: []
 --- !u!95 &5585006479537289415
 Animator:
   serializedVersion: 3
@@ -299,7 +300,7 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 1
+  m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
@@ -403,12 +404,12 @@ PrefabInstance:
     - target: {fileID: 792781890527250195, guid: 24e2a59c7ae56cf4ab5ff3b724acd9d1,
         type: 3}
       propertyPath: time
-      value: 0.2
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 792781890527250195, guid: 24e2a59c7ae56cf4ab5ff3b724acd9d1,
         type: 3}
       propertyPath: startTime
-      value: 0.1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 792781890527250196, guid: 24e2a59c7ae56cf4ab5ff3b724acd9d1,
         type: 3}

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\SceneBehavior\MainCity\MainCityModel.cs" />
     <Compile Include="Assets\Scripts\ui\IPanel.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyText.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneModel.cs" />
     <Compile Include="Assets\Scripts\Timeline\frame\MyPlayableAsset.cs" />
     <Compile Include="Assets\Scripts\data\json\JSONWriter.cs" />
     <Compile Include="Assets\Scripts\game\role\mainrole\MainRoleModel.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\Scripts\SceneBehavior\ISceneBehavior.cs" />
     <Compile Include="Assets\Scripts\ui\component\UGUISpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\ui\MyGUIManager.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneBehavior.cs" />
     <Compile Include="Assets\Scripts\data\Entity.cs" />
     <Compile Include="Assets\Scripts\game\LogicLoader\LogicLoaderControl.cs" />
     <Compile Include="Assets\Scripts\Timeline\TimelineAction.cs" />
@@ -113,6 +115,7 @@
     <Compile Include="Assets\Scripts\utils\ArrayHelper.cs" />
     <Compile Include="Assets\Scripts\utils\data\BuilderConfig.cs" />
     <Compile Include="Assets\Scripts\obj\ObjBehavior.cs" />
+    <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneBehavior.cs" />
     <Compile Include="Assets\Scripts\utils\GameObjectPool.cs" />
     <Compile Include="Assets\Scripts\ui\component\EmojiText\EmojiData.cs" />
     <Compile Include="Assets\Scripts\utils\data\GameConfig.cs" />
@@ -125,6 +128,7 @@
     <Compile Include="Assets\Scripts\game\talks\panel\WalkTipsPanel.cs" />
     <Compile Include="Assets\Scripts\ui\component\EmojiText\EmojiText.cs" />
     <Compile Include="Assets\Scripts\game\GameMng.cs" />
+    <Compile Include="Assets\Scripts\game\CommonPanel\HPMPPanel.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyHorizontalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\common\FSMStateID.cs" />
@@ -159,11 +163,12 @@
     <Compile Include="Assets\Scripts\Timeline\TimelineManager.cs" />
     <Compile Include="Assets\Scripts\game\role\mainrole\MoveBehaviour.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvHelper.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneBehavior.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneModel.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneModel.cs" />
-    <Compile Include="Assets\Scripts\SceneBehavior\Pass2Scene\Pass2SceneBehavior.cs" />
-    <Compile Include="Assets\Scripts\game\CommonPanel\HPMPPanel.cs" />
+    <Compile Include="Assets\Scripts\game\trigger\TriggerModel.cs" />
+    <Compile Include="Assets\Scripts\game\trigger\TriggerControl.cs" />
+    <Compile Include="Assets\Scripts\obj\TriggerBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\CoreTriggerBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\PassBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\FadeShader.shader" />

@@ -21,13 +21,13 @@ public class LoginSceneBehavior : SceneBehavior<LoginSceneModel>
     {
         base.EnterScene();
         //播放背景音乐
-        SoundManager.PlayMusic("event:/login_bg");
+        //SoundManager.PlayMusic("event:/login_bg");
         //RunTask(enumerator());
-
-    }
-
-    IEnumerator enumerator() {
-        yield return new WaitForSeconds(5);
         LogicMM.sceneControl.EnterScene(1);
     }
+
+    //IEnumerator enumerator() {
+    //    yield return new WaitForSeconds(5);
+    //    LogicMM.sceneControl.EnterScene(1);
+    //}
 }

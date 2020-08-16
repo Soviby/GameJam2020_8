@@ -18,7 +18,7 @@ public class MainCityBehavior : SceneBehavior<MainCityModel>
     public override void EnterScene()
     {
         base.EnterScene();
-        RunTask(enumerator());
+       // RunTask(enumerator());
 
     }
 

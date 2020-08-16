@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objType: 2
   aoi_id: 0
+  lineLights: []
 --- !u!114 &5783842580033575411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +147,7 @@ MonoBehaviour:
   angle: 0.76
   layer:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 1792
   target: {fileID: 0}
   father: {fileID: 0}
   isSource: 1

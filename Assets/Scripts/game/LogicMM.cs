@@ -20,6 +20,7 @@ public static class LogicMM
     public static CameraContol cameraContol = new CameraContol();
     public static TalksControl talks = new TalksControl();
     public static RoleControl role = new RoleControl();
+    public static TriggerControl  trigger = new TriggerControl();
 
     /// <summary>
     /// 初始化
@@ -29,21 +30,9 @@ public static class LogicMM
             modlue.OnAppInit();
             //处理属性绑定（网络协议）
         }
-        //
-        GameMng.instance.StartCoroutine(FrameUpdate());
+
     }
 
-    static IEnumerator FrameUpdate() {
-        while (true)
-        {
-            foreach (var modlue in ModuleBase.ModuleList)
-            {
-                modlue.OnFrameUpdate();
-            }
-            yield return new WaitForSeconds(0.02f);
-
-        }
-        
-    }
+ 
 }
 
