@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Timeline\frame\UIPanelPlayableBehaviour.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\SceneBehavior.cs" />
     <Compile Include="Assets\Scripts\obj\CoreTriggerBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\MosterBehavior.cs" />
     <Compile Include="Assets\Scripts\obj\PassBehavior.cs" />
     <Compile Include="Assets\Scripts\game\trigger\linelight\ReflectionBehavior.cs" />
     <Compile Include="Assets\Scripts\game\Input\InputModel.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Assets\Scripts\ui\component\EmojiText\EmojiText.cs" />
     <Compile Include="Assets\Scripts\game\GameMng.cs" />
     <Compile Include="Assets\Scripts\game\CommonPanel\HPMPPanel.cs" />
+    <Compile Include="Assets\Scripts\obj\MainRoleBehavior.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyHorizontalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\common\FSMStateID.cs" />
@@ -173,8 +175,7 @@
     <Compile Include="Assets\Scripts\game\role\mainrole\MoveBehaviour.cs" />
     <Compile Include="Assets\Scripts\data\Utils\CsvHelper.cs" />
     <Compile Include="Assets\Scripts\SceneBehavior\LoginScene\LoginSceneModel.cs" />
-    <Compile Include="Assets\Scripts\obj\MosterBehavior.cs" />
-    <Compile Include="Assets\Scripts\obj\MainRoleBehavior.cs" />
+    <Compile Include="Assets\Scripts\obj\NPCBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\FadeShader.shader" />

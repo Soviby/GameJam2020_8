@@ -236,7 +236,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: 
-  sourceBankPath: Assets/fmod/Desktop
+  sourceBankPath: Assets/fmod
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

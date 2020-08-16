@@ -39,7 +39,7 @@ static class TransformUtils
                 Debug.LogError("FindChild,go is null");
             return null;
         }
-        var t = FindChild(go.transform, id);
+        var t = FindChild(go.transform, id,isErro);
         if (t != null)
         {
             return t.GetComponent<obj>();
